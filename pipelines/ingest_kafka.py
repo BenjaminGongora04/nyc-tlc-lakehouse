@@ -9,8 +9,6 @@ def iniciar_ingesta():
     # Simulando la lectura del dataset de la TLC
     print("Conectando a tópico Kafka: nyc-trips...")
     print("Guardando datos en formato Delta (Capa Bronze)...")
-
-    # Aquí iría la lógica de lectura de Kafka que pusiste en el informe
     # spark.readStream.format("kafka")...
     
 if __name__ == "__main__":
