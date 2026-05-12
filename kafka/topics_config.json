@@ -1,0 +1,7 @@
+{
+  "bootstrap_servers": "localhost:9092",
+  "topics": [
+    { "name": "tlc-trips", "partitions": 3, "replication_factor": 1 },
+    { "name": "driver-status", "partitions": 2, "replication_factor": 1 }
+  ]
+}
