@@ -1,0 +1,15 @@
+{
+  "entidad": "VIAJE",
+  "fuente": "NYC TLC Yellow Taxi",
+  "columnas": [
+    { "name": "VendorID", "type": "INT", "desc": "ID de la empresa" },
+    { "name": "tpep_pickup_datetime", "type": "TIMESTAMP", "desc": "Inicio del viaje" },
+    { "name": "tpep_dropoff_datetime", "type": "TIMESTAMP", "desc": "Fin del viaje" },
+    { "name": "passenger_count", "type": "INT", "desc": "Número de pasajeros" },
+    { "name": "trip_distance", "type": "DOUBLE", "desc": "Distancia en millas" },
+    { "name": "PULocationID", "type": "INT", "desc": "Zona de origen" },
+    { "name": "DOLocationID", "type": "INT", "desc": "Zona de destino" },
+    { "name": "fare_amount", "type": "DECIMAL(10,2)", "desc": "Tarifa base" },
+    { "name": "total_amount", "type": "DECIMAL(10,2)", "desc": "Total pagado (ACID)" }
+  ]
+}
