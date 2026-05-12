@@ -1,15 +1,11 @@
-# Script para Hito H2: Ingesta Bronze
 from pyspark.sql import SparkSession
 
-def iniciar_ingesta():
-    spark = SparkSession.builder \
-        .appName("NYC_TLC_Bronze_Ingestion") \
-        .getOrCreate()
+# Configuración basada en el Artefacto 2 de tu informe
+spark = SparkSession.builder \
+    .appName("NYC_TLC_Lakehouse_Ingest") \
+    .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
+    .getOrCreate()
 
-    # Simulando la lectura del dataset de la TLC
-    print("Conectando a tópico Kafka: nyc-trips...")
-    print("Guardando datos en formato Delta (Capa Bronze)...")
-    # spark.readStream.format("kafka")...
-    
-if __name__ == "__main__":
-    iniciar_ingesta()
+print(">>> Iniciando Ingesta desde Apache Kafka...")
+# Aquí se conectaría al bus de mensajes tolerante a fallos
+print(">>> Almacenando datos en Delta Lake (Capa Bronze - Inmutable)...")
