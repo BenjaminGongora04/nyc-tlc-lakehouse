@@ -50,3 +50,6 @@ PG)
 ├── requirements.txt # Dependencias Python (pyspark, kafka-python,
 fastapi...)
 └── README.md # Este archivo
+
+# 7. Colab
+https://colab.research.google.com/drive/1b0tXo7hzu4PIK59eIg0WAt6IqCt3j7Mz
