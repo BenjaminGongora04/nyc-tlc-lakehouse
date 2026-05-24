@@ -1,8 +1,7 @@
-version: '3.8'
 services:
   # Ingesta (Artefacto 2)
   kafka:
-    image: bitnami/kafka:3.6
+    image: ubuntu/kafka:latest
     ports:
       - "9092:9092"
     environment:
@@ -10,7 +9,7 @@ services:
 
   # Procesamiento (Artefacto 2)
   spark:
-    image: bitnami/spark:3.5
+    image: apache/spark:latest
     environment:
       - SPARK_MODE=master
     ports:
